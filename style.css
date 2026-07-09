@@ -203,6 +203,11 @@ ul {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('background/image.png') center/cover no-repeat;
+}
+
+.hero-bg-elements {
+  display: none;
 }
 
 .hero-meta-row {
