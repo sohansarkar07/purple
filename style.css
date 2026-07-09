@@ -238,19 +238,13 @@ ul {
 }
 
 .hero-title-script-wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(-5deg);
   font-family: var(--font-script);
-  font-size: clamp(2rem, 6vw, 5.5rem);
+  font-size: clamp(4rem, 10vw, 8rem);
   color: #ffffff !important;
   text-shadow: 0 4px 15px rgba(0,0,0,0.8);
   font-weight: 400;
-  white-space: nowrap;
-  max-width: 90vw;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: inline-block;
+  transform: rotate(-3deg);
 }
 
 .hero-socials {
@@ -747,14 +741,12 @@ section {
     line-height: 0.9;
     letter-spacing: -1px;
   }
-  /* Keep script text INSIDE viewport — clip at edge */
   .hero-title-script-wrapper {
-    font-size: clamp(1rem, 6vw, 1.8rem);
-    max-width: 60vw;
-    overflow: hidden;
-    text-overflow: clip;
-    white-space: nowrap;
-    transform: translate(-50%, -50%) rotate(-4deg);
+    font-size: clamp(2.5rem, 12vw, 4.5rem);
+    transform: rotate(-3deg);
+    max-width: 90vw;
+    text-align: center;
+    white-space: normal;
   }
   .hero-socials {
     margin-top: 2rem;
