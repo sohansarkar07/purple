@@ -710,10 +710,18 @@ section {
 /* ── MOBILE (max 600px) ── */
 @media (max-width: 600px) {
 
-  /* --- Hero: compact, no wasted space --- */
+  /* --- Hero: full screen --- */
   .hero {
-    min-height: auto;
-    padding: 5.5rem 5% 2.5rem;
+    min-height: 100svh;
+    padding: 6rem 5% 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
   }
   .hero-meta-row {
     font-size: 0.8rem;
@@ -723,7 +731,8 @@ section {
     text-align: center;
   }
   .hero-title {
-    margin-top: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
     font-size: clamp(3rem, 18vw, 4.5rem);
     line-height: 0.9;
     letter-spacing: -1px;
