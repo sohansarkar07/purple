@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debadrita Roy — Creative & Graphic Designer Portfolio</title>
+  <meta name="description" content="Portfolio of Debadrita Roy, a creative graphic designer specializing in branding, social media, print media, and illustration design.">
+  <meta name="keywords" content="Debadrita Roy, Graphic Designer, Portfolio, Branding, Illustration, Creative Design">
+  <meta name="author" content="Debadrita Roy">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-name">
+        <span class="loader-letter" style="--i:0">D</span>
+        <span class="loader-letter" style="--i:1">R</span>
+      </div>
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <p class="loader-sub">Creative &amp; Graphic Designer</p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="navLogo">
+        <span class="nav-logo-text">DR</span>
+        <span class="nav-logo-dot"></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#illustration" class="nav-link" data-section="illustration">Illustration</a></li>
+        <li><a href="#poster-design" class="nav-link" data-section="poster-design">Poster Design</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu-links">
+      <li><a href="#hero" class="mobile-link" data-section="hero">Home</a></li>
+      <li><a href="#about" class="mobile-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="mobile-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="mobile-link" data-section="projects">Projects</a></li>
+      <li><a href="#illustration" class="mobile-link" data-section="illustration">Illustration</a></li>
+      <li><a href="#poster-design" class="mobile-link" data-section="poster-design">Poster Design</a></li>
+      <li><a href="#contact" class="mobile-link" data-section="contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-elements">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+        <div class="hero-stars-bg">
+          <span class="star s1">✦</span>
+          <span class="star s2">✦</span>
+          <span class="star s3">✦</span>
+          <span class="star s4">✦</span>
+          <span class="star s5">✦</span>
+          <span class="star s6">✦</span>
+          <span class="star s7">✦</span>
+          <span class="star s8">✦</span>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-meta-row reveal-up">
+          <span class="hero-meta-label">Creative Presentation</span>
+          <span class="hero-meta-date">09 July, 2025 &nbsp;→</span>
+        </div>
+
+        <div class="hero-badge reveal-up" style="--delay:0.1s">
+          <span class="hero-badge-dot"></span>
+          Available for Freelance Work
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-title-line reveal-up" style="--delay:0.2s">
+            <span class="hero-title-word">port</span>
+          </span>
+          <span class="hero-title-script-wrapper reveal-up" style="--delay:0.25s">
+            <span class="hero-title-script-text">Laventhorn Creations</span>
+          </span>
+          <span class="hero-title-line reveal-up" style="--delay:0.3s">
+            <span class="hero-title-word hero-title-outline">folio</span>
+          </span>
+        </h1>
+
+        <div class="hero-subtitle reveal-up" style="--delay: 0.4s">
+          <span class="hero-script">Creative</span>
+          <span class="hero-divider"></span>
+          <span class="hero-role">Graphic Designer</span>
+        </div>
+
+        <p class="hero-description reveal-up" style="--delay: 0.5s">
+          Turning ideas into visuals that speak — clean, bold, and designed to leave a lasting impression.
+        </p>
+
+        <div class="hero-cta reveal-up" style="--delay: 0.6s">
+          <a href="#projects" class="btn btn-primary" id="heroCtaPrimary">
+            <span>View My Work</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="heroCtaSecondary">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+
+        <!-- Social Links Row -->
+        <div class="hero-socials reveal-up" style="--delay:0.75s">
+          <a href="https://www.facebook.com/share/18ECyKDBXp/" class="hero-social-item" target="_blank" style="color: inherit;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <span>Facebook</span>
+          </a>
+          <a href="mailto:debadrita857roy@gmail.com" class="hero-social-item" target="_blank" style="color: inherit;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>debadrita857roy@gmail.com</span>
+          </a>
+          <a href="https://www.instagram.com/laventhorn_?igsh=cjIxcWRlcTF6MjV1" class="hero-social-item" target="_blank" style="color: inherit;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            <span>@laventhorn_</span>
+          </a>
+        </div>
+
+        <div class="hero-scroll-indicator reveal-up" style="--delay: 0.9s">
+          <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
+          </div>
+          <span>Scroll Down</span>
+        </div>
+      </div>
+
+      <!-- Floating design tool icons -->
+      <div class="hero-floating-icons">
+        <div class="floating-icon fi-1" title="Adobe Photoshop">
+          <svg viewBox="0 0 40 40" width="40" height="40"><rect width="40" height="40" rx="8" fill="#31A8FF"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#001E36" font-size="14" font-weight="700" font-family="Outfit">Ps</text></svg>
+        </div>
+        <div class="floating-icon fi-2" title="Adobe Illustrator">
+          <svg viewBox="0 0 40 40" width="40" height="40"><rect width="40" height="40" rx="8" fill="#FF9A00"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#330000" font-size="14" font-weight="700" font-family="Outfit">Ai</text></svg>
+        </div>
+        <div class="floating-icon fi-3" title="Figma">
+          <svg viewBox="0 0 40 40" width="40" height="40"><rect width="40" height="40" rx="8" fill="#0ACF83"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#003320" font-size="14" font-weight="700" font-family="Outfit">Fg</text></svg>
+        </div>
+        <div class="floating-icon fi-4" title="Canva">
+          <svg viewBox="0 0 40 40" width="40" height="40"><rect width="40" height="40" rx="8" fill="#00C4CC"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#003333" font-size="14" font-weight="700" font-family="Outfit">Cv</text></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about" id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">01</span>
+          <h2 class="section-title reveal-up">
+            <span class="section-title-script">Hello, I'm</span>
+            <span class="section-title-main">DEBADRITA ROY</span>
+          </h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-image-wrapper reveal-left">
+            <div class="about-image-frame">
+              <img src="profile.jpeg" alt="Debadrita Roy Profile" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+              <div class="about-image-accent"></div>
+            </div>
+            <div class="about-experience-badge">
+              <span class="experience-number">2+</span>
+              <span class="experience-text">Years<br>Experience</span>
+            </div>
+          </div>
+          <div class="about-content">
+            <p class="about-intro reveal-right">
+              I'm a passionate <strong>Graphic Designer</strong> dedicated to crafting visual experiences that captivate and communicate. This portfolio showcases my most significant works and projects.
+            </p>
+            <p class="about-text reveal-right" style="--delay: 0.15s">
+              I specialize in <strong>Graphic Design</strong>, <strong>Communication</strong>, and public relations such as <strong>Tour Guide</strong> and Interpreter, etc. I turn ideas into visuals that speak — clean, bold, and designed to leave a lasting impression.
+            </p>
+            <div class="about-stats reveal-right" style="--delay: 0.3s">
+              <div class="about-stat">
+                <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="about-stat">
+                <span class="stat-number" data-count="30">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-primary about-cta reveal-right" style="--delay: 0.45s" id="aboutCta">
+              <span>Let's Work Together</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="skills" id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">02</span>
+          <h2 class="section-title reveal-up">
+            <span class="section-title-script">My</span>
+            <span class="section-title-main">SKILLS &amp; TOOLS</span>
+          </h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skills-card reveal-up">
+            <div class="skills-card-header">
+              <div class="skills-card-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <h3 class="skills-card-title">Design Skills</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <span class="skill-name">Branding &amp; Identity</span>
+                <div class="skill-bar"><div class="skill-bar-fill" data-width="92"></div></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Social Media Design</span>
+                <div class="skill-bar"><div class="skill-bar-fill" data-width="95"></div></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Print Media Design</span>
+                <div class="skill-bar"><div class="skill-bar-fill" data-width="88"></div></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Illustration</span>
+                <div class="skill-bar"><div class="skill-bar-fill" data-width="85"></div></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Video Editing</span>
+                <div class="skill-bar"><div class="skill-bar-fill" data-width="78"></div></div>
+              </li>
+              <li class="skill-item">
+                <span class="skill-name">Typography</span>
+                <div class="skill-bar"><div class="skill-bar-fill" data-width="90"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-card reveal-up" style="--delay: 0.15s">
+            <div class="skills-card-header">
+              <div class="skills-card-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <h3 class="skills-card-title">Software &amp; Tools</h3>
+            </div>
+            <div class="tools-grid">
+              <div class="tool-item">
+                <div class="tool-icon"><svg viewBox="0 0 40 40" width="36" height="36"><rect width="40" height="40" rx="8" fill="#31A8FF"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#001E36" font-size="14" font-weight="700" font-family="Outfit">Ps</text></svg></div>
+                <span class="tool-name">Photoshop</span>
+                <span class="tool-level">Expert</span>
+              </div>
+              <div class="tool-item">
+                <div class="tool-icon"><svg viewBox="0 0 40 40" width="36" height="36"><rect width="40" height="40" rx="8" fill="#FF9A00"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#330000" font-size="14" font-weight="700" font-family="Outfit">Ai</text></svg></div>
+                <span class="tool-name">Illustrator</span>
+                <span class="tool-level">Expert</span>
+              </div>
+              <div class="tool-item">
+                <div class="tool-icon"><svg viewBox="0 0 40 40" width="36" height="36"><rect width="40" height="40" rx="8" fill="#0ACF83"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#003320" font-size="14" font-weight="700" font-family="Outfit">Fg</text></svg></div>
+                <span class="tool-name">Figma</span>
+                <span class="tool-level">Intermediate</span>
+              </div>
+              <div class="tool-item">
+                <div class="tool-icon"><svg viewBox="0 0 40 40" width="36" height="36"><rect width="40" height="40" rx="8" fill="#00C4CC"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#003333" font-size="14" font-weight="700" font-family="Outfit">Cv</text></svg></div>
+                <span class="tool-name">Canva</span>
+                <span class="tool-level">Advanced</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects" id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">03</span>
+          <h2 class="section-title reveal-up">
+            <span class="section-title-script">Featured</span>
+            <span class="section-title-main">MY PROJECTS</span>
+          </h2>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <div class="project-card reveal-up">
+            <div class="project-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Project</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Branding</span>
+              <h3 class="project-title">Dodge Challenger Demon 170</h3>
+              <p class="project-desc">High-impact poster design showcasing the raw power of the Demon 170.</p>
+            </div>
+          </div>
+          <div class="project-card reveal-up" style="--delay: 0.1s">
+            <div class="project-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Project</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Branding</span>
+              <h3 class="project-title">Magnum Ice Cream Ad</h3>
+              <p class="project-desc">Premium dessert advertisement campaign focused on elegance and taste.</p>
+            </div>
+          </div>
+          <div class="project-card reveal-up" style="--delay: 0.2s">
+            <div class="project-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Project</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Branding</span>
+              <h3 class="project-title">NVIDIA RTX 5060 Ti</h3>
+              <p class="project-desc">Sleek tech product poster design highlighting performance and graphics.</p>
+            </div>
+          </div>
+          <div class="project-card reveal-up" style="--delay: 0.3s">
+            <div class="project-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Project</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Branding</span>
+              <h3 class="project-title">PlayStation 5 Poster</h3>
+              <p class="project-desc">Dynamic gaming console promotional artwork for the next generation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ILLUSTRATION SECTION ===== -->
+    <section class="poster-section" id="illustration">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">04</span>
+          <h2 class="section-title reveal-up">
+            <span class="section-title-script">Digital</span>
+            <span class="section-title-main">ILLUSTRATION</span>
+          </h2>
+        </div>
+        <div class="poster-grid">
+          <div class="poster-card reveal-up">
+            <div class="poster-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Illustration</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Illustration</span>
+              <h3 class="project-title">Camila Cabello</h3>
+              <p class="project-desc">Digital portrait illustration with vivid colors and expressive details.</p>
+            </div>
+          </div>
+          <div class="poster-card reveal-up" style="--delay: 0.1s">
+            <div class="poster-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Illustration</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Illustration</span>
+              <h3 class="project-title">Cartoon Poster Layout</h3>
+              <p class="project-desc">Playful and vibrant cartoon style poster illustration.</p>
+            </div>
+          </div>
+          <div class="poster-card reveal-up" style="--delay: 0.2s">
+            <div class="poster-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Illustration</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Illustration</span>
+              <h3 class="project-title">DareDevil</h3>
+              <p class="project-desc">Intense digital illustration with striking shadows and energy.</p>
+            </div>
+          </div>
+          <div class="poster-card reveal-up" style="--delay: 0.3s">
+            <div class="poster-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Illustration</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Illustration</span>
+              <h3 class="project-title">The Boys</h3>
+              <p class="project-desc">Detailed character illustration inspired by The Boys series.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== POSTER DESIGN SECTION ===== -->
+    <section class="poster-section alt-section" id="poster-design">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">05</span>
+          <h2 class="section-title reveal-up">
+            <span class="section-title-script">Creative</span>
+            <span class="section-title-main">POSTER DESIGN</span>
+          </h2>
+        </div>
+        <div class="poster-grid">
+          <div class="poster-card reveal-up">
+            <div class="poster-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Poster</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Poster Design</span>
+              <h3 class="project-title">Sub-Zero</h3>
+              <p class="project-desc">Mortal Kombat character poster with icy dramatic atmosphere.</p>
+            </div>
+          </div>
+          <div class="poster-card reveal-up" style="--delay: 0.1s">
+            <div class="poster-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Poster</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Poster Design</span>
+              <h3 class="project-title">Spider-Noir</h3>
+              <p class="project-desc">Noir-style Spider-Man artwork blending vintage aesthetics.</p>
+            </div>
+          </div>
+          <div class="poster-card reveal-up" style="--delay: 0.2s">
+            <div class="poster-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Poster</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Poster Design</span>
+              <h3 class="project-title">The Boys</h3>
+              <p class="project-desc">Moody high-contrast visual style inspired by The Boys universe.</p>
+            </div>
+          </div>
+          <div class="poster-card reveal-up" style="--delay: 0.3s">
+            <div class="poster-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Poster</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Poster Design</span>
+              <h3 class="project-title">Transformers: Megatron's Revenge</h3>
+              <p class="project-desc">Concept poster — epic scale, mechanical fury.</p>
+            </div>
+          </div>
+          <div class="poster-card reveal-up" style="--delay: 0.4s">
+            <div class="poster-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Poster</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Poster Design</span>
+              <h3 class="project-title">Rupam Islam</h3>
+              <p class="project-desc">Dynamic and expressive poster design for Rupam Islam.</p>
+            </div>
+          </div>
+          <div class="poster-card reveal-up" style="--delay: 0.5s">
+            <div class="poster-card-image">
+              <div class="img-placeholder"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span>Image Coming Soon</span></div>
+              <div class="project-overlay"><div class="project-overlay-content"><span class="project-view-btn">View Poster</span></div></div>
+            </div>
+            <div class="project-card-info">
+              <span class="project-category">Poster Design</span>
+              <h3 class="project-title">The Gateway</h3>
+              <p class="project-desc">Cinematic movie poster design for The Gateway.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">06</span>
+          <h2 class="section-title reveal-up">
+            <span class="section-title-script">Let's</span>
+            <span class="section-title-main">GET IN TOUCH</span>
+          </h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <p class="contact-intro">
+              Have a project in mind? Let's create something amazing together. Feel free to reach out through the form or connect with me on social media.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Email</span>
+                  <a href="mailto:debadrita857roy@gmail.com" class="contact-item-value">debadrita857roy@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Phone</span>
+                  <a href="tel:+919088895910" class="contact-item-value">+91 9088895910</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Location</span>
+                  <span class="contact-item-value">India</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a href="https://www.instagram.com/laventhorn_?igsh=cjIxcWRlcTF6MjV1" class="social-link" aria-label="Instagram" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="https://www.facebook.com/share/18ECyKDBXp/" class="social-link" aria-label="Facebook" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://youtube.com/@creations_of_debadritaroy?si=UU88kK-lJaUuXGwQ" class="social-link" aria-label="YouTube" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form reveal-right" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="formName" class="form-input" placeholder=" " required>
+              <label for="formName" class="form-label">Your Name</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="formEmail" class="form-input" placeholder=" " required>
+              <label for="formEmail" class="form-label">Email Address</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="formSubject" class="form-input" placeholder=" ">
+              <label for="formSubject" class="form-label">Subject</label>
+              <div class="form-line"></div>
+            </div>
+            <div class="form-group">
+              <textarea id="formMessage" class="form-input form-textarea" placeholder=" " required rows="4"></textarea>
+              <label for="formMessage" class="form-label">Your Message</label>
+              <div class="form-line"></div>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit" id="formSubmit">
+              <span>Send Message</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-stars">
+      <span class="fstar">✦</span><span class="fstar">✦</span><span class="fstar">✦</span><span class="fstar">✦</span>
+    </div>
+    <div class="footer-container">
+      <div class="footer-cta-block">
+        <h2 class="footer-cta-title">Let's work<br><span class="footer-cta-accent">together!</span></h2>
+        <div class="footer-cta-contacts">
+          <div class="footer-contact-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>debadrita857roy@gmail.com</span></div>
+          <div class="footer-contact-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg><span>Facebook</span></div>
+          <div class="footer-contact-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+91 9088895910</span></div>
+        </div>
+      </div>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">DR<span class="footer-logo-dot">.</span></span>
+          <p class="footer-tagline">Creative &amp; Graphic Designer</p>
+        </div>
+        <div class="footer-nav">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Debadrita Roy. All Rights Reserved.</p>
+        <p class="footer-credit">Designed with <span class="footer-heart">&hearts;</span> by Debadrita</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="Project Full View" id="lightboxImg" class="lightbox-img">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
