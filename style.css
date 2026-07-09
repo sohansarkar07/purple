@@ -221,7 +221,7 @@ ul {
   text-shadow: 0 2px 4px rgba(0,0,0,0.8);
 }
 
-.hero-badge, .hero-subtitle, .hero-description, .hero-cta, .hero-scroll-indicator, .hero-floating-icons {
+.hero-badge, .hero-subtitle, .hero-description, .hero-scroll-indicator, .hero-floating-icons {
   display: none;
 }
 
@@ -241,10 +241,45 @@ ul {
   font-family: var(--font-script);
   font-size: clamp(4rem, 10vw, 8rem);
   color: #ffffff !important;
+  -webkit-text-stroke: 1.5px #ffffff;
   text-shadow: 0 4px 15px rgba(0,0,0,0.8);
   font-weight: 400;
   display: inline-block;
   transform: rotate(-3deg);
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  z-index: 10;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.btn-primary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .hero-socials {
