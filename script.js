@@ -67,3 +67,21 @@ revealEls.forEach(el => {
   else el.style.transform = 'translateY(30px)';
   observer.observe(el);
 });
+
+// Skill bar animation
+const skillBars = document.querySelectorAll('.skill-bar-fill');
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        const width = entry.target.getAttribute('data-width');
+        entry.target.style.width = width + '%';
+      }, index * 100);
+      skillObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+skillBars.forEach(bar => {
+  skillObserver.observe(bar);
+});
