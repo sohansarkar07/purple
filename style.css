@@ -252,6 +252,7 @@ ul {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 4rem;
   z-index: 10;
 }
 
